@@ -1,0 +1,3 @@
+rootProject.name = 'NRNAConstitution'
+
+include ':app'
