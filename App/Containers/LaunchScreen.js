@@ -37,9 +37,9 @@ class LaunchScreen extends React.Component {
   render() {
     return (
       <View>
-        <View style={{ flexDirection: 'row' }}>
+        {/*<View style={{ flexDirection: 'row' }}>
           <SearchBar onSearch={this.onSearchText} onCancel={this.onCancelText} searchTerm={this.state.searchText} />
-        </View>
+        </View>*/}
         <ScrollView style={styles.container}>
           <Image style={styles.logo} source={Images.logo} />
           <TextHighlight style={styles.centeredText}
