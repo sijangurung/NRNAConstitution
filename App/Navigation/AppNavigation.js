@@ -7,7 +7,7 @@ import styles from './Styles/NavigationStyles'
 const PrimaryNav = StackNavigator({
   LaunchScreen: {
     screen: LaunchScreen,
-    navigationOptions: { title: 'Constitution' }
+    navigationOptions: { title: 'Constitution' },
   }
 }, {
     // Default config for all screens
