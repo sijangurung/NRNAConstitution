@@ -6,74 +6,52 @@ import Colors from './Colors'
 // Similar to an XML fragment layout in Android
 
 const ApplicationStyles = {
-  screen: {
-    mainContainer: {
-      flex: 1,
-      backgroundColor: Colors.transparent
-    },
-    backgroundImage: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      bottom: 0,
-      right: 0
-    },
-    container: {
-      flex: 1,
-      paddingTop: Metrics.baseMargin,
-      backgroundColor: Colors.transparent
-    },
-    section: {
-      margin: Metrics.section,
-      padding: Metrics.baseMargin
-    },
-    sectionText: {
-      ...Fonts.style.normal,
-      paddingVertical: Metrics.doubleBaseMargin,
-      color: Colors.snow,
-      marginVertical: Metrics.smallMargin,
-      textAlign: 'center'
-    },
-    subtitle: {
-      color: Colors.snow,
-      padding: Metrics.smallMargin,
-      marginBottom: Metrics.smallMargin,
-      marginHorizontal: Metrics.smallMargin
-    },
-    titleText: {
-      ...Fonts.style.h2,
-      fontSize: 14,
-      color: Colors.text
-    }
+  container: {
+    borderRadius: 4,
+    backgroundColor: '#fff',
+    margin: 10,
+    overflow: 'hidden'
   },
-  darkLabelContainer: {
-    padding: Metrics.smallMargin,
-    paddingBottom: Metrics.doubleBaseMargin,
-    borderBottomColor: Colors.border,
-    borderBottomWidth: 1,
-    marginBottom: Metrics.baseMargin
+  titleContainer: {
+    flexDirection: 'row'
   },
-  darkLabel: {
-    fontFamily: Fonts.type.bold,
-    color: Colors.snow
+  title: {
+    flex: 1,
+    padding: 10,
+    color: '#2a2f43',
+    fontWeight: '500',
+    fontSize: 13,
   },
-  groupContainer: {
-    margin: Metrics.smallMargin,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center'
+  button: {
+
   },
-  sectionTitle: {
-    ...Fonts.style.h4,
-    color: Colors.coal,
-    backgroundColor: Colors.ricePaper,
-    padding: Metrics.smallMargin,
-    marginTop: Metrics.smallMargin,
-    marginHorizontal: Metrics.baseMargin,
-    borderWidth: 1,
-    borderColor: Colors.ember,
-    alignItems: 'center',
+  logo:{
+    marginTop: Metrics.baseMargin,
+    marginHorizontal : Metrics.screenWidth / 2 - (Metrics.images.large / 2) ,
+    height: Metrics.images.logo,
+    width: Metrics.images.logo,
+    resizeMode: 'contain',
+  },
+  buttonImage: {
+    width: 30,
+    height: 25
+  },
+  body: {
+    padding: 10,
+    paddingTop: 0
+  },
+  spaceBar: {
+    height: 54
+  },
+  detailText: {
+    textAlign: 'left',
+    fontSize: 13
+  },
+  centeredText: {
     textAlign: 'center'
+  },
+  labelText:{
+    color: '#a2a2a2'
   }
 }
 

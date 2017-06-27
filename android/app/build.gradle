@@ -87,9 +87,9 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.nrnaconstitution"
+        applicationId "no.nrnanorway.nrnaconstitution"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         ndk {
@@ -104,10 +104,19 @@ android {
             include "armeabi-v7a", "x86"
         }
     }
+    signingConfigs {
+        release {
+                storeFile file('./nrnaconstitution-key.keystore')
+                storePassword 'NepalAndKathmandu8488'
+                keyAlias 'nrnac-alias'
+                keyPassword 'NepalAndKathmandu8488'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
